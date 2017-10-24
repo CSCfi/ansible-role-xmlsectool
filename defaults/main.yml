@@ -1,0 +1,5 @@
+---
+# defaults file for CSCfi.ansible-role-xmlsectool
+xmlsectool_version: 2.0.0
+xmlsectool_url: http://shibboleth.net/downloads/tools/xmlsectool/{{ xmlsectool_version }}/xmlsectool-{{ xmlsectool_version }}-bin.zip
+xmlsectool_path: /opt
