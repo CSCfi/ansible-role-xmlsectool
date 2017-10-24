@@ -1,2 +1,12 @@
 ---
 # tasks file for CSCfi.ansible-role-xmlsectool
+
+- name: xmlsectool | Download
+  unarchive:
+    src: "{{ xmlsectool_url }}"
+    dest: "{{ xmlsectool_path }}"
+    remote_src: True
+    
+- shell: ln -sf `ls -d *xmlsectool-* | tail -n1` /opt/xmlsectool
+  args:
+    chdir: /opt
