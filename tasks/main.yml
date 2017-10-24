@@ -1,5 +1,10 @@
 ---
 # tasks file for CSCfi.ansible-role-xmlsectool
+#
+- name: xmlsectool | Install | packages
+  package: name={{ item }}
+  with_items:
+    - java-1.8.0-openjdk-headless
 
 - name: xmlsectool | Download
   unarchive:
