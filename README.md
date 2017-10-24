@@ -8,7 +8,7 @@ An role which installs xmlsectool on RedHat/Debian servers.
 Requirements
 ------------
 
-* None
+* JAVA
 
 Role Variables
 --------------
