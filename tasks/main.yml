@@ -5,6 +5,7 @@
   package: name={{ item }}
   with_items:
     - java-1.8.0-openjdk-headless
+    - unzip
 
 - name: xmlsectool | Download
   unarchive:
