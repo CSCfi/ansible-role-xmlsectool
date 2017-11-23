@@ -14,7 +14,7 @@ env:
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
 
 before_install:
-  - sudo install unzip
+  - sudo apt-get install unzip
   - sudo apt-get update
   # Pull container
   - sudo docker pull ${distribution}:${version}
